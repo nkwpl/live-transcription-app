@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: live-transcription-app
+    env: node
+    region: ohio
+    plan: free
+    branch: main
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    rootDir: "."
+    # Environment variables are defined in the Render dashboard. The
+    # `ASSEMBLYAI_API_KEY` variable should be added in the service's settings.
+    envVars:
+      - key: ASSEMBLYAI_API_KEY
+        sync: false
