@@ -1,0 +1,26 @@
+{
+  "name": "live-transcription-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js application that captures microphone audio, sends it to AssemblyAI for real-time transcription and streams the results to a browser via Server-Sent Events.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "assemblyai",
+    "transcription",
+    "real-time",
+    "microphone",
+    "sse",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "assemblyai": "^3.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "node-record-lpcm16": "^2.0.5"
+  }
+}
